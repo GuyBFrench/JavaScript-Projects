@@ -1,3 +1,7 @@
+function displayDate() {
+    document.getElementById("time").innerHTML = Date();
+  }
+
 window.alert("Hello, World!");
 
 var A = " -Uncle Iroh   ", B = "       \"While it is always best to believe in oneself, a little help from others can be a great blessing.\"", 
