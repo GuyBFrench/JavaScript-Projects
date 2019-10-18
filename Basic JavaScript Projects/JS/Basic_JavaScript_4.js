@@ -4,5 +4,6 @@ function my_Dictionary() {
         favNumber: 8,
         favPlace: "Home",
     };
+    delete Favorite.favColor;
     document.getElementById("Favorite").innerHTML = Favorite.favColor;
 };
