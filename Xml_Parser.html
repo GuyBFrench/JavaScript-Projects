@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            var Movie = "<movie>" +
+                "<title>Howl's Moving Castle</title>" +
+                "<director>Hayao Miyazaki</director>" +
+                "<starring>Takuya Kimura</starring>" + 
+                "<year>2005</year>" + 
+                "</movie>";
+
+                XML_Parser = new DOMParser();
+
+                XML_Document = XML_Parser.parseFromString(Movie,"text/xml");
+
+                document.getElementById("XML_Example").innerHTML = 
+                XML_Document.getElementsByTagName("director")[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>

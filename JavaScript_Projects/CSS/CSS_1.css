@@ -3,3 +3,9 @@ input {
     box-sizing: content-box;
     margin: 8px 0;
 }
+
+body {
+    opacity: 1;
+    transition: 4s opacity;
+}
+
