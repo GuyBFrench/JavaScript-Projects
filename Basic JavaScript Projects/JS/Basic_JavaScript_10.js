@@ -31,9 +31,17 @@ function array_Function(){
     Thing[0] = "Lane"
     Thing[1] = "Rode"
     Thing[2] = "Strep"
-    document.getElementById("thing").innerHTML = "in this picture there is a " + Thing[0] +
+    document.getElementById("Array").innerHTML = "in this picture there is a " + Thing[0] +
     ".";
 }
+
+var text9 = "";
+var i;
+for(i = 0; i < 10; i++){
+    if (i === 3) { continue; }
+    text9 += "The number is " + i + "<br>";
+}
+document.getElementById("numba").innerHTML = text9;
 
 let car = {
     make: "Dodge ",
